@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.header {
+    height: 66px;
+    width: 100%;
+    padding: 0 5% 0 5%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.header__menu_logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.header__buscador_cuenta {
+    display: flex;
+}
+
+    /* HEADER__MENU */
+    
+    .header__menu, .header__menu-item {
+        box-sizing: border-box;
+    }
+    
+    .header__menu {
+        display: grid;
+        width: 20px;
+        height: min-content;
+    }
+
+    .header__menu-link {
+        display: inherit;
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(3, 2px);
+        gap: 4px;
+    }
+    
+    .header__menu-item {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+    }
+    
+    /* HEADER__LOGO */
+    
+    .header__logo__container {
+        width: 200px;
+        height: 50px;
+    }
+    
+    .header__logo__container-link {
+        box-sizing: border-box;
+        display: inline-block;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    
+    .logo__img-1 {
+        height: 100%;
+        margin-left: 10px;
+    }
+    
+    .logo__img_2_3-container {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .logo__img_2-container {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .logo__img_3-container {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo__img_2 {
+        margin: auto;
+    }
+    
+    .logo__img_3 {
+        margin: auto;
+    }
+
+    /* HEADER BUSCADOR */
+
+
+
+/* FOOTER */
+
+.footer {
+    height: 250px;
+}
+
+/* PAGE CONTENT */
+
+.grid {
+    padding: 0 5% 0 5%;
+    min-height: min-content;
+    max-width: 2000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(400px, 4fr) minmax(200px, 1fr);
+    grid-template-areas: 
+    "nav main aside"
+    ;
+}
+
+.grid__item {
+    padding: 10px;
+}
+
+.grid__item-nav {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+/* NAV BAR */
+
+.grid__item-nav {
+    padding-top: 75px;
+}
+
+/* ASIDE */
+
+.grid__item-aside {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding-top: 75px;
+}
